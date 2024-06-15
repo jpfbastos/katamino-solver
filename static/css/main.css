@@ -1,0 +1,54 @@
+body {
+    margin: 10px;
+    font-family: sans-serif;
+}
+h1 {
+    font-weight: bold;
+    text-align: center;
+    color: #000;
+    font-size: 32px;
+}
+h2 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 24px;
+}
+div {
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.pieces {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  padding: 10px;
+  border: 5px solid rgb(100, 180, 255);
+  border-radius: 10px;
+}
+.grid-item {
+  padding: 10px;
+}
+.piece {
+    width: 50px;
+    padding: 5px;
+    vertical-align: middle;
+}
+.submit {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px 10px 20px;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.solved {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+}
+input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}

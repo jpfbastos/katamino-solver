@@ -1,0 +1,66 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block body %}
+<h1>Katamino Solver</h1>
+<form action="/" method="post">
+    <div class="pieces">
+        <div class="grid-item">
+            <img class="piece" src="static/images/red.png" alt="Red Block">
+            <input type="checkbox" name="red">
+        </div>
+        <div class="grid-item">
+            <img class="piece" src="static/images/orange.png" alt="Orange Block">
+            <input type="checkbox" name="orange">
+        </div>
+        <div class="grid-item">
+            <img class="piece" src="static/images/yellow.png" alt="Yellow Block">
+            <input type="checkbox" name="yellow">
+        </div>
+        <div class="grid-item">
+            <img class="piece" src="static/images/green.png" alt="Green Block">
+            <input type="checkbox" name="green">
+        </div>
+        <div class="grid-item">
+            <img class="piece" src="static/images/dark_green.png" alt="Dark Green Block">
+            <input type="checkbox" name="dark_green">
+        </div>
+        <div class="grid-item">
+            <img class="piece" src="static/images/cyan.png" alt="Cyan Block">
+            <input type="checkbox" name="cyan">
+        </div>
+        <div class="grid-item">
+            <img class="piece" src="static/images/blue.png" alt="Blue Block">
+            <input type="checkbox" name="blue">
+        </div>
+        <div class="grid-item">
+            <img class="piece" src="static/images/dark_blue.png" alt="Dark Blue Block">
+            <input type="checkbox" name="dark_blue">
+        </div>
+        <div class="grid-item">
+            <img class="piece" src="static/images/purple.png" alt="Purple Block">
+            <input type="checkbox" name="purple">
+        </div>
+        <div class="grid-item">
+            <img class="piece" src="static/images/pink.png" alt="Pink Block">
+            <input type="checkbox" name="pink">
+        </div>
+        <div class="grid-item">
+            <img class="piece" src="static/images/brown.png" alt="Brown Block">
+            <input type="checkbox" name="brown">
+        </div>
+        <div class="grid-item">
+            <img class="piece" src="static/images/grey.png" alt="Grey Block">
+            <input type="checkbox" name="grey">
+        </div>
+    </div>
+    <button class="submit">Solve!</button>
+</form>
+{% if img_board %}
+    <img class="solved" src="{{ img_board }}" alt="board">
+{% endif %}
+
+{% endblock %}
