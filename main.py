@@ -47,18 +47,3 @@ def index():
 
 if __name__ == '__main__':
     app.run()
-    '''
-    pieces = ['red', 'orange', 'yellow', 'green', 'dark_green', 'cyan',
-              'blue', 'dark_blue', 'purple', 'pink', 'brown', 'grey']
-    remaining = {piece: 0 for piece in pieces}
-    remaining.update({'red': 0, 'orange': 1, 'yellow': 1, 'green': 1, 'dark_green': 1, 'cyan': 1,
-                      'blue': 0, 'dark_blue': 0, 'purple': 1, 'pink': 1, 'brown': 1, 'grey': 1})
-    num_pieces = 0
-    for i in remaining.values():
-        num_pieces += i
-    board = np.zeros((5, num_pieces))
-    if solver.solve(board, remaining):
-        print(board)
-    else:
-        print('No solution found')
-    '''
